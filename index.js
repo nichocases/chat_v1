@@ -23,7 +23,7 @@ document.getElementById("a").addEventListener("submit", (e) => {
   return false;
   })
 
-chat.orderBy('timestamp','desc').onSnapshot((querySnapshot)=> {
+chat.orderBy('timestamp','asc').onSnapshot((querySnapshot)=> {
 list.innerHTML = '';
 querySnapshot.forEach((doc) => {
   const li = document.createElement("li");
